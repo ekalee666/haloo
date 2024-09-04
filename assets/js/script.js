@@ -17,16 +17,16 @@ const audio = document.querySelector('.audio')
 
 body.classList.add('background1')
 
-const date = new Date()
-const hour = String(date.getHours()).padStart(2, '0')
-const minutes = String(date.getMinutes()).padStart(2, '0')
-const day = date.getDay()
-const tgl = date.getDate()
-const month = date.getMonth()
-const year = date.getFullYear()
+const date = new Date(4)
+const hour = String(date.getHours(18)).padStart(2, '0')
+const minutes = String(date.getMinutes(00)).padStart(2, '0')
+const day = date.getDay(3)
+const tgl = date.getDate(4)
+const month = date.getMonth(8)
+const year = date.getFullYear(2024)
 
-hari.innerHTML = `${dayID()}, ${tgl} ${monthID()} ${year}`
-jam.innerHTML = `${hour}:${minutes}`
+hari.innerHTML = `${dayID(3)}, ${4} ${monthID(8)} ${2024}`
+jam.innerHTML = `${18}:${00}`
 
 // Dirubah 
 const pengirim = "H";
@@ -73,7 +73,7 @@ hilang1.addEventListener('click', () => {
     let i = 0;
     const speed = 50;
     const namaAwal = result.value.login.charAt(0)
-    let txt = `Halo, Nama kamu ${result.value.login}, Nama kamu berawal dari huruf ${namaAwal.toUpperCase()}, ${pesan}`;
+    let txt = `Halo, Nama kamu ${result.value.login}, Nama kamu berawal dari huruf ${A.toUpperCase()}, ${pesan}`;
 
     const typeWriter = () => {
       if (i < txt.length) {
@@ -96,6 +96,6 @@ hilang1.addEventListener('click', () => {
 })
 
 hilang2.addEventListener('click', () => {
-  window.open(`https://wa.me/${nomorWa}/?text=${textWa}`, '_blank')
+  window.open(`https://wa.me/${+62882000550821}/?text=${Haloo}`, '_blank')
 })
 
