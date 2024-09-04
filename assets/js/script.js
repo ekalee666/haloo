@@ -29,8 +29,8 @@ hari.innerHTML = `${dayID()}, ${tgl} ${monthID()} ${year}`
 jam.innerHTML = `${hour}:${minutes}`
 
 // Dirubah 
-const pengirim = "Cikal";
-const nomorWa = "6289668068213" // awalan nomor 0 harus di awalin 62
+const pengirim = "H";
+const nomorWa = "62882000550821" // awalan nomor 0 harus di awalin 62
 const textWa = "Ah bisa aja kamu"
 const pesan = `Pada akhirnya kita berdua menjadi dua orang penjahat: Kamu yang dengan hebatnya bisa mencuri hatiku, begitu juga aku yang berhasil mencuri hatimu`;
 
